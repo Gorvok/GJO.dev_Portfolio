@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import Resume from '../assets/img/Resume Dev.pdf';
-import '../assets/css/Navbar.css';
+import '../assets/css/navbar.css';
 import Logo from '../assets/img/GG LOGO.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';

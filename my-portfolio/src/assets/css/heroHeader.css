@@ -1,0 +1,49 @@
+.gradient-text {
+    background: linear-gradient(to right, #77C675, #05C7F2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hover\:gradient-animate:hover {
+    animation: gradientShift 3s infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.collab-btn:hover {
+    background-image: linear-gradient(45deg, #77C675, #05C7F2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    border: none;
+}
+
+@keyframes waveAnimation {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: rotate(-10deg);
+    }
+    20%, 40%, 60%, 80% {
+        transform: rotate(10deg);
+    }
+}
+
+.waveEmoji {
+    display: inline-block;
+    animation-name: waveAnimation;
+    animation-duration: 2.5s;
+    transform-origin: 70% 70%;
+}

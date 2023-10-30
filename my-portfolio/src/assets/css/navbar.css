@@ -1,0 +1,92 @@
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+.swing-animation {
+    animation: swing 3s ease-in-out infinite;  /* 3 seconds for a full swing */
+    transform-origin: center top;  /* Pivot point for the swing */
+}
+
+.swing-animation:hover {
+    animation-play-state: paused;
+}
+
+
+
+a {
+    color: white;
+    transition: color 0.3s;
+}
+
+
+.gradient-text:hover a {
+    background: linear-gradient(90deg, #77C675, #05C7F2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+/* Gradient animation on hover */
+.gradient-text:hover a {
+    animation: gradientAnimation 3s linear infinite;
+    background-size: 200% 100%;
+}
+
+ul {
+    list-style-type: none;  
+    padding-left: 0;      
+}
+
+li {
+    margin-right: 20px;
+}
+
+
+/* Hamburger icon */
+.fas.fa-bars {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Side drawer */
+.side-drawer {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Starts off the screen */
+    width: 300px;
+    height: 100%;
+    background: #333;
+    transition: right 0.3s;
+  }
+  
+  .open {
+    right: 0; /* Moves to be visible on the screen */
+  }
+  
+
+.side-drawer ul {
+    list-style-type: none;
+}
+
+.side-drawer li {
+    margin-bottom: 20px;
+}
+
+/* Open state for the side drawer */
+.side-drawer.open {
+    right: 0;
+}

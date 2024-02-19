@@ -8,7 +8,6 @@ Preview
 ![Portfolio Preview](./src/assets/img/Portfolio.png)
 
 
-Note: Replace the path above with an actual screenshot of your website for a visual preview.
 
 Technologies Used
 ReactJS: The primary framework used for building the user interface.

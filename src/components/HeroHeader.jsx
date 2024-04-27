@@ -21,10 +21,10 @@ function HeroHeader() {
                 <div className="gradient-text hover:gradient-animate text-3xl mb-4 lg:text-4xl md:text-3xl sm:text-2xl">
                     <Typewriter
                         strings={[
-                            "Front-End Developer",
+                            "Full Stack Developer",
                             "Mobile Developer",
-                            "UI/UX Developer",
-                            "Designer",
+                            "Continuous Learner",
+                            "Blogger",
                             "Professional Nap Taker"
                         ]}
                         typeSpeed={100}

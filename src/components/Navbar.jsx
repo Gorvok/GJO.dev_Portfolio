@@ -6,16 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
+
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const navItems = [
-        { label: "Home", link: "#home" },
+        { label: "Home", link: "/" },
         { label: "About", link: "#about" },
         { label: "Portfolio", link: "#portfolio" },
         { label: "Resume", link: Resume, external: true },
         { label: "Services", link: "#services" },
-        { label: "Contact", link: "#contact" }
+        { label: "Contact", link: "/contact" }
     ];
     const handleOutsideClick = useCallback((event) => {
         if (menuOpen && !event.target.closest('.side-drawer')) {
@@ -37,7 +38,7 @@ function Navbar() {
 
             {/* Logo */}
             <div className="flex-shrink-0">
-                <a href="#home">
+                <a href="/">
                     <img src={Logo} alt="GJO Logo" className='h-5 w-50 ml-4 swing-animation logo-glow'/>
                 </a>
             </div>

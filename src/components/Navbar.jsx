@@ -12,7 +12,7 @@ function Navbar() {
 
     const navItems = [
         { label: "Home", link: "/" },
-        { label: "About", link: "#about" },
+        { label: "About", link: "/about" },
         { label: "Portfolio", link: "#portfolio" },
         { label: "Resume", link: Resume, external: true },
         { label: "Services", link: "#services" },

@@ -1,6 +1,7 @@
 import Typewriter from './Typewriter';
 import Logo from '../assets/img/GG LOGO.png';
 import '../assets/css/heroHeader.css';
+import { Link } from 'react-router-dom';
 
 function HeroHeader() {
     return (
@@ -32,9 +33,9 @@ function HeroHeader() {
                         delay={2000}
                     />
                 </div>
-                <button className="collab-btn text-sm py-2 px-5 bg-gradient-to-r from-green-500 to-sky-500 rounded-lg shadow-md hover:bg-gradient-to-r hover:from-green-500 hover:to-sky-500 transition duration-300 ease-in-out">
+                <Link to="/contact" className="collab-btn text-sm py-2 px-5 bg-gradient-to-r from-green-500 to-sky-500 rounded-lg shadow-md hover:bg-gradient-to-r hover:from-green-500 hover:to-sky-500 transition duration-300 ease-in-out">
                     Let&apos;s Collab
-                </button>
+                </Link>
             </div>
         </div>
     );

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import HTMLIcon from '../assets/img/icons8-html.svg';
 import CSSIcon from '../assets/img/icons8-css.svg';
 import JSIcon from '../assets/img/icons8-js.svg';
+import TSIcon from '../assets/img/icons8-typescript.svg'
 import NextIcon from '../assets/img/nextjs-icon-dark-background.svg';
 import TailwindIcon from '../assets/img/icons8-tailwind-css.svg';
 import BootstrapIcon from '../assets/img/icons8-bootstrap.svg';
@@ -25,6 +26,7 @@ const icons = [
     { name: 'HTML', icon: HTMLIcon, link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
     { name: 'CSS', icon: CSSIcon, link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
     { name: 'JavaScript', icon: JSIcon, link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+    { name: 'TypeScript', icon: TSIcon, link: 'https://www.typescriptlang.org/' },
     { name: 'Next.JS', icon: NextIcon, link: 'https://nextjs.org/' },
     { name: 'Tailwind', icon: TailwindIcon, link: 'https://tailwindcss.com/' },
     { name: 'Bootstrap', icon: BootstrapIcon, link: 'https://getbootstrap.com/' },

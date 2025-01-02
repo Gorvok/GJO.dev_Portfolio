@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import Resume from '../assets/img/Resume Dev.pdf';
+import Resume from '../assets/img/GGorvokaj-Dev-25.pdf';
 import '../assets/css/navbar.css';
 import Logo from '../assets/img/GG LOGO.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -23,7 +23,7 @@ function Navbar() {
             setMenuOpen(false);
         }
     }, [menuOpen]);
-    
+
 
     useEffect(() => {
         window.addEventListener('click', handleOutsideClick);
@@ -31,7 +31,7 @@ function Navbar() {
             window.removeEventListener('click', handleOutsideClick);
         };
     }, [menuOpen, handleOutsideClick]);
-    
+
 
     return (
         <div className="fixed top-0 left-0 w-full z-10 flex items-center p-4">
@@ -49,8 +49,8 @@ function Navbar() {
                     <ul className="flex justify-center">
                         {navItems.map(item => (
                             <li key={item.label} className="gradient-text hover:gradient-animate">
-                                <a 
-                                    className="text-white ml-5" 
+                                <a
+                                    className="text-white ml-5"
                                     href={item.link}
                                     target={item.external ? "_blank" : undefined}
                                     rel={item.external ? "noopener noreferrer" : undefined}
@@ -77,17 +77,17 @@ function Navbar() {
             {/* Side drawer for tablet/mobile */}
             {menuOpen && (
                 <div className="side-drawer open">
-                    <FontAwesomeIcon 
-                        icon={faTimes} 
-                        className="text-white cursor-pointer mb-4" 
+                    <FontAwesomeIcon
+                        icon={faTimes}
+                        className="text-white cursor-pointer mb-4"
                         onClick={() => setMenuOpen(false)}
                     />
                     <nav>
                         <ul>
                             {navItems.map(item => (
                                 <li key={item.label} className="gradient-text hover:gradient-animate">
-                                    <a 
-                                        className="text-white ml-5" 
+                                    <a
+                                        className="text-white ml-5"
                                         href={item.link}
                                         target={item.external ? "_blank" : undefined}
                                         rel={item.external ? "noopener noreferrer" : undefined}

@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from 'react';
-import Resume from '../assets/img/GGorvokaj-Dev-25.pdf';
 import '../assets/css/navbar.css';
 import Logo from '../assets/img/GG LOGO.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,7 +13,6 @@ function Navbar() {
         { label: "Home", link: "/" },
         { label: "About", link: "/about" },
         { label: "Portfolio", link: "#portfolio" },
-        { label: "Resume", link: Resume, external: true },
         { label: "Services", link: "#services" },
         { label: "Contact", link: "/contact" }
     ];

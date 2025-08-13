@@ -14,7 +14,7 @@ function About() {
 
                 <div className="space-y-4 text-gray-200/80 text-base md:text-lg">
                     <p>
-                        Hey, I&apos;m Gjo, a Full Stack Developer based in Metro Detroit, Michigan. I started
+                        Hey, I&apos;m Gjo, a Full Stack Developer based in the USA. I started
                         tinkering with code as a kid and came back to it full force in 2022. Since then I&apos;ve been
                         building clean, fast, conversion-focused products with a bias for shipping.
                     </p>

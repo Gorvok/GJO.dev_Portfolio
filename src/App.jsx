@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Services from "./components/Services.jsx";
+import Ventures from "./components/Ventures";
+
 
 function App() {
   return (
@@ -13,9 +15,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
+            <Route path="/ventures" element={<Ventures />} />
           <Route path="/portfolio" element={<Portfolio />}  />
             <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
           <Route path="/contact" element={<HeroContact />} />
         </Routes>
           <Footer />

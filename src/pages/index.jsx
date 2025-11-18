@@ -1,14 +1,14 @@
 import HeroHeader from "../components/HeroHeader";
 import HeroCarousel from "../components/HeroCarousel";
-import HeroCard from "../components/HeroCard";
 import HeroServices from "../components/HeroServices";
+import HeroStudioSection from "../components/HomeStudioSection.jsx"
 
 function Index() {
   return (
     <div className="grid gap-4">
       <HeroHeader />
+        <HeroStudioSection />
       <HeroCarousel />
-      <HeroCard />
       <HeroServices />
     </div>
   );

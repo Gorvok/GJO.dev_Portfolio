@@ -3,6 +3,9 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import React from "react";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -64,13 +67,13 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`${inter.className} antialiased`}>
-        {/* We'll add Navbar here in the next step */}
         <Navbar />
         <main className="min-h-screen">
             {children}
         </main>
         <Footer />
-        {/* We'll add Footer here in the next step */}
+        <Analytics />
+        <SpeedInsights />
         </body>
         </html>
     );

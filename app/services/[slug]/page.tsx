@@ -28,8 +28,22 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     }
 
     return {
-        title: `${service.title} | Services`,
+        title: service.title,
         description: service.description,
+        keywords: [service.title, 'Web Development Services', 'GJO Studio', 'Freelance Developer Michigan'],
+        alternates: { canonical: `https://gjo.dev/services/${service.slug}` },
+        openGraph: {
+            title: `${service.title} | GJO Studio`,
+            description: service.description,
+            url: `https://gjo.dev/services/${service.slug}`,
+            images: [{ url: '/images/gg-logo.png', width: 1200, height: 630, alt: service.title }],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${service.title} | GJO Studio`,
+            description: service.description,
+            images: ['/images/gg-logo.png'],
+        },
     };
 }
 

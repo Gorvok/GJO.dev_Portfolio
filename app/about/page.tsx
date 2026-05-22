@@ -3,7 +3,21 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: 'About',
-    description: 'Learn more about GJO - a full-stack developer building digital products across web, mobile, and AI platforms.',
+    description: 'Learn about Gjovani Gorvokaj (GJO) — a self-taught full stack developer from Michigan building web, mobile, and AI-powered digital products since 2014.',
+    keywords: ['About GJO', 'Gjovani Gorvokaj', 'Full Stack Developer Michigan', 'Self-taught Developer', 'React', 'Next.js', 'Flutter', 'TypeScript'],
+    alternates: { canonical: 'https://gjo.dev/about' },
+    openGraph: {
+        title: 'About | GJO Studio',
+        description: 'Self-taught full stack developer from Michigan building web, mobile, and AI-powered products since 2014.',
+        url: 'https://gjo.dev/about',
+        images: [{ url: '/images/gg-logo.png', width: 1200, height: 630, alt: 'GJO Studio' }],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'About | GJO Studio',
+        description: 'Self-taught full stack developer from Michigan building web, mobile, and AI-powered products since 2014.',
+        images: ['/images/gg-logo.png'],
+    },
 };
 
 export default function AboutPage() {

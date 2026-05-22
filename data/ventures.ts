@@ -40,8 +40,8 @@ export const ventures: Venture[] = [
         title: "Jayobe",
         tagline: "The smarter way to find local jobs.",
         description:
-            "A verified local job discovery platform connecting job seekers with real businesses in their area. Apply in seconds, every business is verified, 100% free for job seekers. Launching in Michigan.",
-        tech: ["Next.js", "TypeScript", "Bun", "Elysia", "Supabase", "Stripe", "Mapbox", "Shadcn/ui"],
+            "A verified local job discovery platform connecting job seekers with real businesses in their area. Apply in seconds, every business is verified, 100% free for job seekers. Currently a PWA — native mobile app in the roadmap. Launching in Michigan.",
+        tech: ["Next.js", "TypeScript", "Bun", "Elysia", "Supabase", "Stripe", "Mapbox", "Shadcn/ui", "PWA"],
         live: "https://www.jayobe.io",
         role: "Founder · Lead Developer",
         stage: "Active development · Beta",

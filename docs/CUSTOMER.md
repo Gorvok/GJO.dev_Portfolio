@@ -14,7 +14,7 @@ All the products and platforms being actively built under GJO Studio. Each card 
 
 **Current ventures:**
 - [LumoraVerse](https://www.lumoraverse.com) — Homeschool ecosystem for Christian families
-- [Jayobe](https://www.jayobe.io) — Local job discovery platform (Beta · Michigan)
+- [Jayobe](https://www.jayobe.io) — Local job discovery platform, PWA (Beta · Michigan)
 - GJO Dev Studio — The umbrella studio
 - [NautiTrail](https://www.nautitrail.com) — Outdoor trail discovery
 - [Secrts](https://secrts.com) — Private couples app
@@ -22,7 +22,7 @@ All the products and platforms being actively built under GJO Studio. Each card 
 Click any venture card for a full detail page with description, tech stack, and links.
 
 ### Portfolio — `/portfolio`
-Individual projects and experiments. Filter by category (Web Development, Experiment) or browse all. Each project card links to a detail page with a full description, tech used, and links to live demos or GitHub repos where available.
+Individual projects and experiments. Search by keyword or tech stack, filter by category (Web Development, Client Work, Experiment) or by year. Projects are sorted newest first. Each card links to a detail page with a full description, tech used, and links to live demos or GitHub repos where available.
 
 ### Services — `/services`
 What GJO Studio offers for client work:
@@ -51,6 +51,13 @@ Reach out via the contact form or directly at [hello@gjo.dev](mailto:hello@gjo.d
 - **Email:** [hello@gjo.dev](mailto:hello@gjo.dev)
 
 ---
+
+## SEO & Discoverability
+
+The site is fully indexed and includes:
+- A sitemap at [gjo.dev/sitemap.xml](https://gjo.dev/sitemap.xml)
+- Structured data (JSON-LD) for Google rich results
+- Open Graph and Twitter card metadata on every page
 
 ## Something broken?
 

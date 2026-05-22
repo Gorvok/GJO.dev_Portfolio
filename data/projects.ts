@@ -47,6 +47,25 @@ export const projects: Project[] = [
         kind: "experiment",
         featured: true,
     },
+    // Client work
+    {
+        slug: "reliable-medical-training",
+        title: "Reliable Medical Training",
+        image: "/images/projects/reliable-medical-training-img.png",
+        category: "Client Work",
+        description:
+            "Marketing site for a Southeast Michigan CPR & First Aid training company.",
+        longDescription:
+            "A professional marketing website for Reliable Medical Training, a Southeast Michigan-based CPR, First Aid, and Fire Safety training company run by a 22+ year fire service veteran. The site showcases services including CPR & AED certification, First Aid, and custom group training, with a quote request form and flexible scheduling info. Built with React, TypeScript, Tailwind CSS, and Vite.",
+        tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+        date: "2026-05-16",
+        client: "Reliable Medical Training",
+        live: "https://www.reliablemedicaltraining.com",
+        repo: null,
+        kind: "client",
+        featured: false,
+    },
+
     // Venture-related projects
     {
         slug: "lumoraverse-platform",
@@ -72,8 +91,8 @@ export const projects: Project[] = [
         description:
             "The smarter way to find local jobs — verified opportunities from real businesses, apply in seconds.",
         longDescription:
-            "Jayobe is a verified local job discovery platform built for job seekers and employers. Every business is verified, applications take seconds, and it's 100% free for job seekers. Built on a modern full-stack: Next.js + TypeScript frontend, Bun with Elysia on the backend, Supabase for database/auth/storage, Stripe for payments, Mapbox for location-aware job listings, and Resend for transactional email. Currently launching in Michigan with hundreds on the waitlist.",
-        tech: ["Next.js", "TypeScript", "Bun", "Elysia", "Supabase", "Stripe", "Mapbox", "Resend", "Shadcn/ui", "Railway", "Vercel"],
+            "Jayobe is a verified local job discovery platform built for job seekers and employers. Every business is verified, applications take seconds, and it's 100% free for job seekers. Currently live as a PWA with a native mobile app planned. Built on a modern full-stack: Next.js + TypeScript frontend, Bun with Elysia on the backend, Supabase for database/auth/storage, Stripe for payments, Mapbox for location-aware job listings, and Resend for transactional email. Currently launching in Michigan with hundreds on the waitlist.",
+        tech: ["Next.js", "TypeScript", "Bun", "Elysia", "Supabase", "Stripe", "Mapbox", "Resend", "Shadcn/ui", "PWA", "Railway", "Vercel"],
         date: "2026-03-23",
         live: "https://www.jayobe.io",
         repo: null,
@@ -131,6 +150,16 @@ export function getProjectsByKind(kind: string) {
 export function getAllCategories() {
     const categories = Array.from(new Set(projects.map((p) => p.category)));
     return ['All', ...categories];
+}
+
+export function getAllYears() {
+    const years = Array.from(new Set(projects.map((p) => new Date(p.date).getFullYear())))
+        .sort((a, b) => b - a);
+    return years;
+}
+
+export function getProjectsSortedByDate() {
+    return [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export function getProjectBySlug(slug: string) {

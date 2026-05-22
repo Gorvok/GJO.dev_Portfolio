@@ -6,7 +6,7 @@
 
 Welcome to the official repository for my portfolio website. Built with Next.js 16 and TypeScript, this platform showcases my professional journey as a full-stack developer, highlighting my ventures, projects, skills, and services across web, mobile, and AI platforms.
 
-**Live Site:** [gjo.dev](https://www.gjo.dev) &nbsp;·&nbsp; **Version:** `v0.2.0`
+**Live Site:** [gjo.dev](https://www.gjo.dev) &nbsp;·&nbsp; **Version:** `v0.2.3`
 
 ---
 
@@ -36,6 +36,12 @@ Welcome to the official repository for my portfolio website. Built with Next.js 
 - **Next.js Image** — Optimized image loading
 - **Vercel Analytics + Speed Insights** — Performance monitoring
 
+### SEO & Security
+- **Sitemap** — Auto-generated at `/sitemap.xml` covering all routes
+- **robots.txt** — Auto-generated via `app/robots.ts`
+- **JSON-LD** — Person + WebSite structured data for Google rich results
+- **Security Headers** — CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy
+
 ---
 
 ## Features
@@ -54,7 +60,9 @@ Welcome to the official repository for my portfolio website. Built with Next.js 
 - Related ventures section
 
 **Portfolio**
-- Filterable project grid (Web Development, Experiment)
+- Search bar filtering by title, description, and tech stack
+- Category filter (Web Development, Client Work, Experiment)
+- Year filter chips — dynamically generated, sorted newest first
 - Project detail pages with live demos and GitHub links
 - Technology tags and related projects
 
@@ -134,7 +142,7 @@ public/
 | Venture | Status | Link |
 |---|---|---|
 | LumoraVerse | Active development | [lumoraverse.com](https://www.lumoraverse.com) |
-| Jayobe | Active development · Beta | [jayobe.io](https://www.jayobe.io) |
+| Jayobe | Active development · Beta · PWA | [jayobe.io](https://www.jayobe.io) |
 | GJO Dev Studio | Active | — |
 | NautiTrail | Concept / early build | [nautitrail.com](https://www.nautitrail.com) |
 | Secrts | Concept / early build | [secrts.com](https://secrts.com) |

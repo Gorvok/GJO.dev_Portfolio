@@ -28,9 +28,27 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
         };
     }
 
+    const ogImage = project.image
+        ? { url: project.image, width: 1200, height: 630, alt: project.title }
+        : { url: '/images/gg-logo.png', width: 1200, height: 630, alt: 'GJO Studio' };
+
     return {
-        title: `${project.title} | Portfolio`,
-        description: project.description,
+        title: project.title,
+        description: project.longDescription ?? project.description,
+        keywords: [project.title, project.category, ...project.tech, 'GJO Studio', 'Portfolio'],
+        alternates: { canonical: `https://gjo.dev/portfolio/${project.slug}` },
+        openGraph: {
+            title: `${project.title} | GJO Studio`,
+            description: project.description,
+            url: `https://gjo.dev/portfolio/${project.slug}`,
+            images: [ogImage],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${project.title} | GJO Studio`,
+            description: project.description,
+            images: [ogImage.url],
+        },
     };
 }
 

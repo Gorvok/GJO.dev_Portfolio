@@ -28,8 +28,22 @@ export async function generateMetadata({ params }: VenturePageProps): Promise<Me
     }
 
     return {
-        title: `${venture.title} | Ventures`,
+        title: venture.title,
         description: venture.description,
+        keywords: [venture.title, ...venture.tech, 'GJO Studio', 'Venture', 'Digital Product'],
+        alternates: { canonical: `https://gjo.dev/ventures/${venture.slug}` },
+        openGraph: {
+            title: `${venture.title} | GJO Studio`,
+            description: venture.description,
+            url: `https://gjo.dev/ventures/${venture.slug}`,
+            images: [{ url: '/images/gg-logo.png', width: 1200, height: 630, alt: venture.title }],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${venture.title} | GJO Studio`,
+            description: venture.description,
+            images: ['/images/gg-logo.png'],
+        },
     };
 }
 

@@ -6,6 +6,50 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.2.3] — 2026-05-22
+
+### Added
+- `app/sitemap.ts` — auto-generated sitemap covering all static + dynamic routes with priority and changeFrequency
+- `app/robots.ts` — proper robots.txt pointing to sitemap, blocking `/_next/` and `/api/`
+- `app/portfolio/layout.tsx` — metadata for client-side portfolio page (OG, Twitter, keywords, canonical)
+- `app/contact/layout.tsx` — metadata for client-side contact page
+- JSON-LD structured data in root layout (`Person` + `WebSite` schemas for Google rich results)
+- Full OG + Twitter card metadata on all static pages (about, ventures, services, portfolio, contact)
+- Keywords added to all pages
+- Canonical URLs on all pages and dynamic routes
+- Dynamic routes now generate per-project/venture/service OG images and keywords
+- HTTP security headers in `next.config.ts`: `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Strict-Transport-Security` (HSTS), `Permissions-Policy`, `Content-Security-Policy`
+- LCP `priority` prop added to first image in portfolio grid
+
+### Fixed
+- Removed stray `verification: { google: undefined }` from root layout metadata
+
+---
+
+## [0.2.2] — 2026-05-22
+
+### Added
+- Portfolio search bar — filters by title, description, and tech stack in real time
+- Year filter chips — dynamically generated from project dates, toggleable
+- Default sort by most recent first across all projects
+- `getAllYears()` and `getProjectsSortedByDate()` helpers in `data/projects.ts`
+- **Reliable Medical Training** added as a client project (React, TypeScript, Tailwind CSS, Vite) — launched 2026-05-16
+- New `Client Work` category for client-built sites
+- Updated Jayobe to reflect PWA status and planned native mobile app
+
+### Fixed
+- Removed manual `useMemo` from portfolio page — React Compiler handles memoization automatically (lint error resolved)
+
+---
+
+## [0.2.1] — 2026-05-22
+
+### Added
+- **Reliable Medical Training** added as a client project — CPR & First Aid training site built with React, TypeScript, Tailwind CSS, and Vite
+- New `Client Work` project category for client-built sites (distinct from ventures and experiments)
+
+---
+
 ## [0.2.0] — 2026-05-22
 
 ### Added

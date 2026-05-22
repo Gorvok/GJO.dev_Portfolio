@@ -4,7 +4,21 @@ import { ventures } from '@/data/ventures';
 
 export const metadata: Metadata = {
     title: 'Ventures',
-    description: 'Explore all the projects and ventures from GJO Studio - innovative digital products across web, mobile, and AI.',
+    description: 'Explore all ventures from GJO Studio — LumoraVerse, Jayobe, NautiTrail, Secrts, and more. Digital products across web, mobile, and AI.',
+    keywords: ['GJO Ventures', 'LumoraVerse', 'Jayobe', 'NautiTrail', 'Secrts', 'Digital Products', 'Startups', 'Indie Developer'],
+    alternates: { canonical: 'https://gjo.dev/ventures' },
+    openGraph: {
+        title: 'Ventures | GJO Studio',
+        description: 'LumoraVerse, Jayobe, NautiTrail, Secrts — digital products built by GJO across web, mobile, and AI.',
+        url: 'https://gjo.dev/ventures',
+        images: [{ url: '/images/gg-logo.png', width: 1200, height: 630, alt: 'GJO Studio Ventures' }],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Ventures | GJO Studio',
+        description: 'LumoraVerse, Jayobe, NautiTrail, Secrts — digital products built by GJO.',
+        images: ['/images/gg-logo.png'],
+    },
 };
 
 export default function VenturesPage() {

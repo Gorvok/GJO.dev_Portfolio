@@ -93,6 +93,16 @@ In `data/ventures.ts`, add a `Venture` object:
 }
 ```
 
+### Project categories
+
+| Category | Use for |
+|---|---|
+| `Web Development` | Personal/venture web projects |
+| `Client Work` | Client-built sites |
+| `Experiment` | Side experiments and demos |
+
+Categories are derived dynamically via `getAllCategories()` — adding a new `category` value to any project automatically adds it to the portfolio filter.
+
 ### Adding a new project
 
 In `data/projects.ts`, add a `Project` object:
@@ -109,7 +119,7 @@ In `data/projects.ts`, add a `Project` object:
     date: "2026-01-01",
     live: "https://example.com",
     repo: null,
-    kind: "venture",      // "venture" | "experiment"
+    kind: "venture",      // "venture" | "experiment" | "client"
     featured: true,
 }
 ```
@@ -174,6 +184,32 @@ Branch strategy:
 - `dev` — active development
 
 ---
+
+## SEO
+
+- **Sitemap**: auto-generated at `app/sitemap.ts` — includes all static + dynamic routes with priority and changeFrequency. Rebuilds on every deployment.
+- **robots.txt**: `app/robots.ts` — blocks `/_next/` and `/api/`, points to sitemap.
+- **JSON-LD**: root layout injects `Person` + `WebSite` schemas. Update names/links in `app/layout.tsx` if identity details change.
+- **Metadata**: every page exports metadata. Client pages (`portfolio`, `contact`) use a `layout.tsx` wrapper since `'use client'` pages can't export metadata directly.
+- **Canonical URLs**: all pages include `alternates.canonical`. Update if the domain changes.
+- **Google Search Console**: add `verification.google` to root metadata in `app/layout.tsx` once the site is verified.
+
+## Security
+
+Security headers are set in `next.config.ts` via the `headers()` function and apply globally to all routes:
+
+| Header | Value | Purpose |
+|---|---|---|
+| `X-Frame-Options` | `DENY` | Prevent clickjacking |
+| `X-Content-Type-Options` | `nosniff` | Prevent MIME sniffing |
+| `Referrer-Policy` | `strict-origin-when-cross-origin` | Limit referrer leakage |
+| `Strict-Transport-Security` | `max-age=31536000; includeSubDomains; preload` | Force HTTPS |
+| `Permissions-Policy` | camera, mic, geolocation disabled | Limit browser feature access |
+| `Content-Security-Policy` | See `next.config.ts` | Restrict resource origins |
+
+**CSP notes**: `unsafe-inline` is required for Next.js hydration scripts and Tailwind inline styles. `unsafe-eval` is required for Next.js dev mode. For a stricter production CSP, consider implementing nonce-based CSP via Next.js middleware.
+
+**No API routes** — this site has no server-side API surface. Contact form is handled entirely client-side via Formspree.
 
 ## Known Limitations
 

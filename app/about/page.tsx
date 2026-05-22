@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: 'About',
-    description: 'Learn about Gjovani Gorvokaj (GJO) — a self-taught full stack developer from Michigan building web, mobile, and AI-powered digital products since 2014.',
+    description: 'Learn about Gjovani Gorvokaj (GJO), a self-taught full stack developer from Michigan building web, mobile, and AI-powered digital products since 2014.',
     keywords: ['About GJO', 'Gjovani Gorvokaj', 'Full Stack Developer Michigan', 'Self-taught Developer', 'React', 'Next.js', 'Flutter', 'TypeScript'],
     alternates: { canonical: 'https://gjo.dev/about' },
     openGraph: {
@@ -29,6 +29,12 @@ export default function AboutPage() {
     ];
 
     const experience = [
+        {
+            year: '2026',
+            title: 'CTO · Co-Founder',
+            company: 'Jayobe',
+            description: 'Co-founding and leading the technical direction of Jayobe, a verified local job discovery platform launching in Michigan, currently live as a PWA with a native mobile app in the roadmap.',
+        },
         {
             year: '2024',
             title: 'Founder & Lead Developer',

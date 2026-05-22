@@ -3,7 +3,7 @@ import HeroHeader from '@/components/home/HeroHeader';
 
 export const metadata: Metadata = {
     title: 'GJO Studio | Full Stack Developer & Builder',
-    description: 'GJO Studio — full stack developer building apps, tools, and digital products across web, mobile, and AI. Based in Michigan.',
+    description: 'GJO Studio, full stack developer building apps, tools, and digital products across web, mobile, and AI. Based in Michigan.',
     keywords: ['GJO Studio', 'Full Stack Developer Michigan', 'React Developer', 'Next.js', 'TypeScript', 'Web Developer for Hire'],
     alternates: { canonical: 'https://gjo.dev' },
     openGraph: {

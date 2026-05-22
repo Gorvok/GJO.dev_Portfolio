@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         default: 'GJO Studio | Full Stack Developer & Builder',
         template: '%s | GJO Studio',
     },
-    description: 'GJO Studio — Full stack developer building apps, tools, and digital products across web, mobile, and AI. Based in Michigan.',
+    description: 'GJO Studio, Full stack developer building apps, tools, and digital products across web, mobile, and AI. Based in Michigan.',
     keywords: [
         'GJO', 'GJO Studio', 'Gjovani Gorvokaj', 'Full Stack Developer', 'Web Developer Michigan',
         'React Developer', 'Next.js Developer', 'TypeScript', 'Mobile App Developer',
@@ -96,7 +96,7 @@ export default function RootLayout({
                             '@type': 'WebSite',
                             name: 'GJO Studio',
                             url: 'https://gjo.dev',
-                            description: 'Portfolio and studio of GJO — full stack developer building digital products across web, mobile, and AI.',
+                            description: 'Portfolio and studio of GJO, full stack developer building digital products across web, mobile, and AI.',
                             author: { '@type': 'Person', name: 'Gjovani Gorvokaj' },
                         },
                     ]),

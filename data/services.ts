@@ -71,7 +71,7 @@ export const services: Service[] = [
         description:
             "User interface and experience design that puts your users first while maintaining your brand identity.",
         longDescription:
-            "Great design is more than aesthetics—it's about creating intuitive experiences that users love. I design interfaces that are both beautiful and functional, with a focus on usability, accessibility, and conversion. From wireframes to high-fidelity prototypes, I'll help bring your vision to life.",
+            "Great design is more than aesthetics,it's about creating intuitive experiences that users love. I design interfaces that are both beautiful and functional, with a focus on usability, accessibility, and conversion. From wireframes to high-fidelity prototypes, I'll help bring your vision to life.",
         features: [
             "User research & personas",
             "Wireframing & prototyping",

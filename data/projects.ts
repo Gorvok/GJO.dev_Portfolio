@@ -89,7 +89,7 @@ export const projects: Project[] = [
         image: "/images/projects/jayobe-img.png",
         category: "Web Development",
         description:
-            "The smarter way to find local jobs — verified opportunities from real businesses, apply in seconds.",
+            "The smarter way to find local jobs, verified opportunities from real businesses, apply in seconds.",
         longDescription:
             "Jayobe is a verified local job discovery platform built for job seekers and employers. Every business is verified, applications take seconds, and it's 100% free for job seekers. Currently live as a PWA with a native mobile app planned. Built on a modern full-stack: Next.js + TypeScript frontend, Bun with Elysia on the backend, Supabase for database/auth/storage, Stripe for payments, Mapbox for location-aware job listings, and Resend for transactional email. Currently launching in Michigan with hundreds on the waitlist.",
         tech: ["Next.js", "TypeScript", "Bun", "Elysia", "Supabase", "Stripe", "Mapbox", "Resend", "Shadcn/ui", "PWA", "Railway", "Vercel"],

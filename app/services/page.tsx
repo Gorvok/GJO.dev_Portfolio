@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     alternates: { canonical: 'https://gjo.dev/services' },
     openGraph: {
         title: 'Services | GJO Studio',
-        description: 'Web development, mobile apps, UI/UX design, and consulting — available worldwide from Michigan.',
+        description: 'Web development, mobile apps, UI/UX design, and consulting, available worldwide from Michigan.',
         url: 'https://gjo.dev/services',
         images: [{ url: '/images/gg-logo.png', width: 1200, height: 630, alt: 'GJO Studio Services' }],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Services | GJO Studio',
-        description: 'Web development, mobile apps, UI/UX design, and consulting — available worldwide.',
+        description: 'Web development, mobile apps, UI/UX design, and consulting, available worldwide.',
         images: ['/images/gg-logo.png'],
     },
 };

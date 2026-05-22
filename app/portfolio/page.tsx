@@ -137,7 +137,7 @@ export default function PortfolioPage() {
                     <div className="flex items-center justify-between mb-8">
                         <p className="text-white/60 text-sm">
                             Showing <span className="text-white font-semibold">{filteredProjects.length}</span> {filteredProjects.length === 1 ? 'project' : 'projects'}
-                            {hasActiveFilters && <span className="text-white/40"> — filtered</span>}
+                            {hasActiveFilters && <span className="text-white/40">, filtered</span>}
                         </p>
                         {hasActiveFilters && (
                             <button

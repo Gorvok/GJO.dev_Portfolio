@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: '404 — Page Not Found',
+    title: '404, Page Not Found',
     description: 'This page does not exist.',
 };
 
@@ -55,14 +55,14 @@ export default function NotFound() {
                         <div className="w-3 h-3 rounded-full bg-red-500/80" />
                         <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                         <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                        <span className="ml-2 text-white/30 text-xs">gjo.dev — bash</span>
+                        <span className="ml-2 text-white/30 text-xs">gjo.dev, bash</span>
                     </div>
                     <p className="text-white/40">
                         <span className="text-green-400">~/gjo.dev</span>
                         <span className="text-white/30"> $ </span>
                         <span className="text-white/70">find . -name &quot;this-page&quot;</span>
                     </p>
-                    <p className="text-red-400/80 mt-1">find: no results — page does not exist</p>
+                    <p className="text-red-400/80 mt-1">find: no results, page does not exist</p>
                     <p className="text-white/40 mt-1">
                         <span className="text-green-400">~/gjo.dev</span>
                         <span className="text-white/30"> $ </span>
@@ -72,7 +72,7 @@ export default function NotFound() {
 
                 {/* Description */}
                 <p className="text-white/50 mb-10 leading-relaxed">
-                    This page doesn&apos;t exist — or maybe it used to. Either way, let&apos;s get you back on track.
+                    This page doesn&apos;t exist, or maybe it used to. Either way, let&apos;s get you back on track.
                 </p>
 
                 {/* CTAs */}

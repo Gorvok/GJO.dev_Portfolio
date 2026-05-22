@@ -1,0 +1,52 @@
+# Changelog
+
+All notable changes to GJO.dev Portfolio are documented here.
+Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+Versioning follows [Semantic Versioning](https://semver.org/).
+
+---
+
+## [0.2.0] — 2026-05-22
+
+### Added
+- Custom `404 Not Found` page (`app/not-found.tsx`) with terminal aesthetic, animated background blobs, and branded CTAs
+- **Jayobe** added as a venture (`data/ventures.ts`) — local job discovery platform launching in Michigan
+- **Jayobe** added as a project (`data/projects.ts`) with full tech stack, description, and project image
+- Project image for Jayobe (`public/images/projects/jayobe-img.png`)
+
+### Fixed
+- `metadataBase` missing from root layout — social OG/Twitter images now resolve correctly
+- `sizes` prop missing on all `fill` Next.js Image components in portfolio pages (improves LCP)
+- `favicon-16x16.png` 404 — removed redundant manual `icons` block from metadata; App Router auto-serves from `app/`
+- `data-scroll-behavior="smooth"` added to `<html>` element to suppress Next.js route transition warning
+- Removed unused `Image` import in `app/about/page.tsx` (lint warning)
+
+### Changed
+- Bumped **Next.js** `16.0.3` → `16.2.6` (addresses 20+ CVEs including DoS, cache poisoning, CSRF bypass, XSS, SSRF)
+- Bumped **React / React DOM** `19.2.0` → `19.2.6`
+- Bumped **Tailwind CSS** `4.1.17` → `4.3.0`
+- Bumped **@tailwindcss/postcss** `4.1.17` → `4.3.0`
+- Bumped **react-icons** `5.5.0` → `5.6.0`
+- Bumped **@fortawesome/*** `7.1.0` → `7.2.0`, react-fontawesome `3.1.0` → `3.3.1`
+- Bumped **eslint-config-next** to match Next.js `16.2.6`
+- Bumped **@types/react** `19.2.6` → `19.2.15`
+- Removed legacy `src/` directory (JSX/CSS from pre-migration; replaced by App Router structure)
+- Footer now displays version badge (`v0.2.0`)
+
+---
+
+## [0.1.0] — 2025-11-19
+
+### Added
+- Initial portfolio site built with Next.js 16 App Router + TypeScript
+- Pages: Home, About, Ventures, Portfolio, Services, Contact
+- Dynamic routes for ventures, projects, and services (`/[slug]`)
+- Ventures: LumoraVerse, GJO Dev Studio, NautiTrail, Secrts, Portfolio Projects
+- Projects: Spotify Autosave App, Tiny Farm Web Game, LumoraVerse Platform, NautiTrail, Secrts
+- Animated hero with typewriter effect, tech stack carousel, and background blobs
+- Contact form via Formspree
+- Vercel Analytics + Speed Insights integration
+- Responsive navbar with mobile drawer and scroll effects
+- Dark theme with green/sky/purple gradient system
+- SEO metadata with Open Graph and Twitter card support
+- Deployed to Vercel at [gjo.dev](https://gjo.dev)

@@ -182,6 +182,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                                             src={project.image}
                                             alt={project.title}
                                             fill
+                                            sizes="(max-width: 768px) 100vw, 50vw"
                                             className="object-cover"
                                         />
                                     ) : (
@@ -220,6 +221,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                                                 src={relatedProject.image}
                                                 alt={relatedProject.title}
                                                 fill
+                                                sizes="(max-width: 768px) 100vw, 33vw"
                                                 className="object-cover"
                                             />
                                         ) : (

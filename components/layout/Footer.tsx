@@ -233,6 +233,10 @@ export default function Footer() {
                         </p>
                         <span className="hidden sm:inline text-white/30">•</span>
                         <p className="text-white/50">Built with intent, shipped with care.</p>
+                        <span className="hidden sm:inline text-white/30">•</span>
+                        <span className="inline-flex items-center gap-1 rounded-full bg-white/5 px-2.5 py-0.5 ring-1 ring-white/10 text-xs text-white/40 font-mono">
+                            v0.2.0
+                        </span>
                     </div>
 
                     <button

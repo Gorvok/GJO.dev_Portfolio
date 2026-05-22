@@ -36,6 +36,18 @@ export const ventures: Venture[] = [
         highlight: true,
     },
     {
+        slug: "jayobe",
+        title: "Jayobe",
+        tagline: "The smarter way to find local jobs.",
+        description:
+            "A verified local job discovery platform connecting job seekers with real businesses in their area. Apply in seconds, every business is verified, 100% free for job seekers. Launching in Michigan.",
+        tech: ["Next.js", "TypeScript", "Bun", "Elysia", "Supabase", "Stripe", "Mapbox", "Shadcn/ui"],
+        live: "https://www.jayobe.io",
+        role: "Founder · Lead Developer",
+        stage: "Active development · Beta",
+        highlight: true,
+    },
+    {
         slug: "nautitrail",
         title: "NautiTrail",
         tagline: "Outdoor discovery and eco-tourism planning.",

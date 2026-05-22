@@ -10,6 +10,7 @@ import React from "react";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://gjo.dev'),
     title: {
         default: 'GJO Studio | Full Stack Developer & Builder',
         template: '%s | GJO Studio',
@@ -52,11 +53,6 @@ export const metadata: Metadata = {
             'max-snippet': -1,
         },
     },
-    icons: {
-        icon: '/favicon.ico',
-        shortcut: '/favicon-16x16.png',
-        apple: '/apple-touch-icon.png',
-    },
 };
 
 export default function RootLayout({
@@ -65,7 +61,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" data-scroll-behavior="smooth">
         <body className={`${inter.className} antialiased`}>
         <Navbar />
         <main className="min-h-screen">

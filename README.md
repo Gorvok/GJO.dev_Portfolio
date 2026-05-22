@@ -6,7 +6,7 @@
 
 Welcome to the official repository for my portfolio website. Built with Next.js 16 and TypeScript, this platform showcases my professional journey as a full-stack developer, highlighting my ventures, projects, skills, and services across web, mobile, and AI platforms.
 
-**Live Site:** [gjo.dev](https://www.gjo.dev)
+**Live Site:** [gjo.dev](https://www.gjo.dev) &nbsp;·&nbsp; **Version:** `v0.2.0`
 
 ---
 
@@ -16,110 +16,148 @@ Welcome to the official repository for my portfolio website. Built with Next.js 
 
 ---
 
-## 🚀 Technologies Used
+## Technologies Used
 
 ### Core Framework
-- **Next.js 16** - React framework with App Router
-- **TypeScript** - Type-safe development
-- **React 19** - Latest React features
+- **Next.js 16.2.6** — React framework with App Router
+- **TypeScript** — Type-safe development
+- **React 19** — Latest React features
 
 ### Styling & UI
-- **Tailwind CSS** - Utility-first CSS framework
-- **Custom Animations** - Smooth transitions and effects
-- **Responsive Design** - Mobile-first approach
+- **Tailwind CSS 4.3** — Utility-first CSS framework
+- **Shadcn/ui** — Component primitives
+- **Custom Animations** — Smooth transitions and effects
+- **Responsive Design** — Mobile-first approach
 
 ### Tools & Libraries
-- **React Icons** - Icon library
-- **Font Awesome** - Additional icons
-- **Formspree** - Contact form handling
-- **Next.js Image** - Optimized image loading
+- **React Icons** — Icon library
+- **Font Awesome** — Additional icons
+- **Formspree** — Contact form handling
+- **Next.js Image** — Optimized image loading
+- **Vercel Analytics + Speed Insights** — Performance monitoring
 
 ---
 
-## ✨ Main Features
+## Features
 
 ### Pages & Sections
 
-**🏠 Home**
+**Home**
 - Hero section with animated background
 - Tech stack carousel with infinite scroll
 - Featured ventures preview
 - Services overview
-- Typewriter effect for dynamic content
 
-**💼 Ventures**
-- Grid view of all ventures (LumoraVerse, GJO Studio, NautiTrail, Secrts)
-- Dynamic detail pages with tech stack
+**Ventures**
+- Grid view of all ventures (LumoraVerse, Jayobe, GJO Studio, NautiTrail, Secrts)
+- Dynamic detail pages with tech stack and status
 - Related ventures section
-- Status badges (Active, In Development, etc.)
 
-**📁 Portfolio**
+**Portfolio**
 - Filterable project grid (Web Development, Experiment)
 - Project detail pages with live demos and GitHub links
-- Technology tags
-- Related projects section
+- Technology tags and related projects
 
-**🛠️ Services**
-- Web Development
-- Mobile App Development
-- UI/UX Design
-- Technical Consulting
-- Pricing information
-- "How It Works" process breakdown
+**Services**
+- Web, Mobile, UI/UX, and Consulting offerings
+- Pricing and process breakdown
 
-**👤 About**
-- Personal story and introduction
-- Skills categorized by Frontend, Backend, Mobile, Tools
-- Experience timeline
-- Core values and principles
+**About**
+- Personal story, skills, experience timeline, and values
 
-**📧 Contact**
+**Contact**
 - Working contact form via Formspree
-- Contact information cards
-- Social media links
-- FAQ section with expandable answers
-- Success/loading states
+- Social links and FAQ
 
-**🧭 Navigation**
-- Responsive navbar with mobile drawer
-- Active page detection
-- Scroll effects
-- Footer with social links and site navigation
+**404**
+- Custom not-found page with terminal aesthetic and branded navigation
 
 ---
 
-## 🎨 Design Features
+## Design System
 
-- **Dark Theme** - Modern dark color scheme with green/sky/purple accents
-- **Gradient Effects** - Smooth color transitions throughout
-- **Animated Backgrounds** - Pulsing gradient orbs
-- **Hover States** - Interactive feedback on all clickable elements
-- **Mobile Responsive** - Optimized for all screen sizes
-- **Smooth Animations** - Fade-ins, slides, and transforms
-- **Loading States** - Visual feedback during async operations
+- **Dark Theme** — Gray-950 base with green/sky/purple accent gradients
+- **Glassmorphism Cards** — `from-white/[0.08] to-white/[0.02]` with `ring-1 ring-white/10`
+- **Gradient Text** — `from-green-400 via-sky-400 to-purple-400`
+- **Animated Blobs** — Pulsing gradient orbs via `animate-pulse-glow`
+- **Hover States** — Scale, ring, and shimmer feedback on all interactive elements
 
 ---
 
-## 📧 Contact Form
+## Getting Started
 
-The contact form uses [Formspree](https://formspree.io/) for handling submissions.
+```bash
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Lint
+npm run lint
+```
 
 ---
 
-## 🎯 Key Pages
+## Project Structure
 
-- **Home:** `/`
-- **About:** `/about`
-- **Ventures:** `/ventures`
-- **Portfolio:** `/portfolio`
-- **Services:** `/services`
-- **Contact:** `/contact`
-
-All ventures, projects, and services have their own detail pages with dynamic routing.
+```
+app/                  # Next.js App Router pages and layouts
+  layout.tsx          # Root layout with metadata and global providers
+  not-found.tsx       # Custom 404 page
+  page.tsx            # Home page
+  about/
+  contact/
+  portfolio/
+  services/
+  ventures/
+components/
+  home/               # Home page sections
+  layout/             # Navbar, Footer
+  ui/                 # Shared UI primitives
+  ventures/
+data/
+  projects.ts         # Project entries and helpers
+  services.ts         # Services data
+  ventures.ts         # Venture entries
+public/
+  images/             # Project and logo images
+```
 
 ---
 
-## 🔗 Links
+## Ventures
+
+| Venture | Status | Link |
+|---|---|---|
+| LumoraVerse | Active development | [lumoraverse.com](https://www.lumoraverse.com) |
+| Jayobe | Active development · Beta | [jayobe.io](https://www.jayobe.io) |
+| GJO Dev Studio | Active | — |
+| NautiTrail | Concept / early build | [nautitrail.com](https://www.nautitrail.com) |
+| Secrts | Concept / early build | [secrts.com](https://secrts.com) |
+
+---
+
+## Key Routes
+
+| Route | Description |
+|---|---|
+| `/` | Home |
+| `/about` | About me |
+| `/ventures` | All ventures |
+| `/ventures/[slug]` | Venture detail |
+| `/portfolio` | Project grid |
+| `/portfolio/[slug]` | Project detail |
+| `/services` | Services |
+| `/services/[slug]` | Service detail |
+| `/contact` | Contact form |
+
+---
+
+## Links
 
 - **Website:** [gjo.dev](https://www.gjo.dev)
 - **GitHub:** [@Gorvok](https://www.github.com/Gorvok)
@@ -128,44 +166,16 @@ All ventures, projects, and services have their own detail pages with dynamic ro
 
 ---
 
-## 📄 License
+## Changelog
 
-This project is licensed under the MIT License.
-
----
-
-## 🙏 Acknowledgements
-
-- **Next.js Team** - For the amazing framework
-- **Vercel** - For hosting and deployment
-- **Tailwind CSS** - For the utility-first CSS framework
-- **Formspree** - For contact form handling
-- **React Icons** - For the icon library
-- **Font Awesome** - For additional icons
+See [CHANGELOG.md](./CHANGELOG.md) for full version history.
 
 ---
 
-## 🚧 Roadmap
+## License
 
-- [ ] Add blog section
-- [ ] Implement dark/light mode toggle
-- [ ] Add testimonials section
-- [ ] Create resume/CV download
-- [ ] Integrate analytics
-- [ ] Add more projects and ventures
+MIT License — see [LICENSE](./LICENSE) for details.
 
 ---
 
-## 📊 Stats
-
-- **20+ Pages** - Including all dynamic routes
-- **TypeScript** - 100% type-safe
-- **Responsive** - Mobile, tablet, desktop optimized
-- **Performance** - Optimized images and lazy loading
-- **SEO** - Proper meta tags and structure
-
----
-
-Made with ❤️ by [GJO](https://github.com/Gorvok)
-
-**⭐ Star this repo if you found it helpful!**
+Made with care by [GJO](https://github.com/Gorvok)
